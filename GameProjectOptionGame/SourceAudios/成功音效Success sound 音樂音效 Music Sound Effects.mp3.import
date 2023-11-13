@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/成功音效Success sound 音樂音效 Music Sound Effects.mp3-4736d5056914f7c90bfe937621c16ccf.mp3str"
+
+[deps]
+
+source_file="res://SourceAudios/成功音效Success sound 音樂音效 Music Sound Effects.mp3"
+dest_files=[ "res://.import/成功音效Success sound 音樂音效 Music Sound Effects.mp3-4736d5056914f7c90bfe937621c16ccf.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Pretty Filmscore - Freedom Trail Studio.mp3-0c5be45c424cfa6f7e19da9c58a8b4a2.mp3str"
+
+[deps]
+
+source_file="res://SourceAudios/Pretty Filmscore - Freedom Trail Studio.mp3"
+dest_files=[ "res://.import/Pretty Filmscore - Freedom Trail Studio.mp3-0c5be45c424cfa6f7e19da9c58a8b4a2.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

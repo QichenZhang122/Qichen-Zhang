@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/錯誤提示音Error tone 音樂音效 Music Sound Effects.mp3-936db8b8e27b1bd5a23e03cc649077d7.mp3str"
+
+[deps]
+
+source_file="res://SourceAudios/錯誤提示音Error tone 音樂音效 Music Sound Effects.mp3"
+dest_files=[ "res://.import/錯誤提示音Error tone 音樂音效 Music Sound Effects.mp3-936db8b8e27b1bd5a23e03cc649077d7.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

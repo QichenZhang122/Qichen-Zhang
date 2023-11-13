@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/游戏结束蜂鸣声Game over beep 音樂音效 Music Sound Effects.mp3-ab745a0b0d6972a0e3071e72c64c8149.mp3str"
+
+[deps]
+
+source_file="res://SourceAudios/游戏结束蜂鸣声Game over beep 音樂音效 Music Sound Effects.mp3"
+dest_files=[ "res://.import/游戏结束蜂鸣声Game over beep 音樂音效 Music Sound Effects.mp3-ab745a0b0d6972a0e3071e72c64c8149.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,143 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://SourceImages/感谢.png" type="Texture" id=1]
+[ext_resource path="res://SourceImages/Scoreboard.png" type="Texture" id=2]
+[ext_resource path="res://MainScreens/Final.gd" type="Script" id=3]
+
+[sub_resource type="StyleBoxFlat" id=9]
+bg_color = Color( 0.156863, 0.152941, 0.152941, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 1, 1, 1, 1 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 3 )
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="TextureRect" type="TextureRect" parent="PanelContainer"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 1017.0
+margin_bottom = 593.0
+texture = ExtResource( 1 )
+expand = true
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 1017.0
+margin_bottom = 593.0
+custom_constants/margin_right = 8
+custom_constants/margin_top = 8
+custom_constants/margin_left = 8
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer"]
+margin_left = 8.0
+margin_top = 8.0
+margin_right = 1002.0
+margin_bottom = 586.0
+custom_constants/separation = 375
+
+[node name="DialogueBox" type="PanelContainer" parent="PanelContainer/MarginContainer/VBoxContainer"]
+margin_right = 994.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 0, 100 )
+custom_styles/panel = SubResource( 9 )
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer/MarginContainer/VBoxContainer/DialogueBox"]
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 990.0
+margin_bottom = 96.0
+custom_constants/margin_right = 10
+custom_constants/margin_top = 10
+custom_constants/margin_left = 10
+custom_constants/margin_bottom = 10
+
+[node name="Line1" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/DialogueBox/MarginContainer"]
+margin_left = 10.0
+margin_top = 39.0
+margin_right = 976.0
+margin_bottom = 53.0
+text = "Thank you for playing "
+autowrap = true
+
+[node name="DecisionBox" type="PanelContainer" parent="PanelContainer/MarginContainer"]
+margin_left = 8.0
+margin_top = 506.0
+margin_right = 1002.0
+margin_bottom = 586.0
+rect_min_size = Vector2( 0, 80 )
+size_flags_vertical = 8
+custom_styles/panel = SubResource( 9 )
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer/MarginContainer/DecisionBox"]
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 990.0
+margin_bottom = 76.0
+custom_constants/margin_right = 10
+custom_constants/margin_top = 10
+custom_constants/margin_left = 10
+custom_constants/margin_bottom = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer/DecisionBox/MarginContainer"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 976.0
+margin_bottom = 62.0
+custom_constants/separation = 8
+
+[node name="Button" type="Button" parent="PanelContainer/MarginContainer/DecisionBox/MarginContainer/VBoxContainer"]
+margin_right = 966.0
+margin_bottom = 20.0
+text = "Return to start screen"
+
+[node name="Button2" type="Button" parent="PanelContainer/MarginContainer/DecisionBox/MarginContainer/VBoxContainer"]
+visible = false
+margin_top = 28.0
+margin_right = 966.0
+margin_bottom = 48.0
+text = "Proceed to next"
+
+[node name="Button3" type="Button" parent="PanelContainer/MarginContainer/DecisionBox/MarginContainer/VBoxContainer"]
+visible = false
+margin_top = 56.0
+margin_right = 966.0
+margin_bottom = 76.0
+text = "C. Use funds from your organization. "
+
+[node name="Button4" type="Button" parent="PanelContainer/MarginContainer/DecisionBox/MarginContainer/VBoxContainer"]
+visible = false
+margin_top = 56.0
+margin_right = 966.0
+margin_bottom = 76.0
+text = "D. Use your fame to do advertisements. "
+
+[node name="Scoreboard" type="TextureRect" parent="."]
+margin_left = 45.0
+margin_top = 130.0
+margin_right = 261.0
+margin_bottom = 193.0
+texture = ExtResource( 2 )
+expand = true
+
+[node name="Label" type="Label" parent="Scoreboard"]
+margin_left = 95.0
+margin_top = 24.0
+margin_right = 187.0
+margin_bottom = 45.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "-----------"
+
+[connection signal="pressed" from="PanelContainer/MarginContainer/DecisionBox/MarginContainer/VBoxContainer/Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/DecisionBox/MarginContainer/VBoxContainer/Button2" to="." method="_on_Button2_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/DecisionBox/MarginContainer/VBoxContainer/Button3" to="." method="_on_Button3_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/DecisionBox/MarginContainer/VBoxContainer/Button4" to="." method="_on_Button4_pressed"]

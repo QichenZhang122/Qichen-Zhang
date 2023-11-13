@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/掌声 applause  音乐音效 Music Sound Effects.mp3-2fbac3fdf4a4d74b25b78da00287db2d.mp3str"
+
+[deps]
+
+source_file="res://SourceAudios/掌声 applause  音乐音效 Music Sound Effects.mp3"
+dest_files=[ "res://.import/掌声 applause  音乐音效 Music Sound Effects.mp3-2fbac3fdf4a4d74b25b78da00287db2d.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

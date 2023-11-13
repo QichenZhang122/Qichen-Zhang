@@ -1,0 +1,40 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://MainScreens/Audio.gd" type="Script" id=1]
+[ext_resource path="res://SourceAudios/Pretty Filmscore - Freedom Trail Studio.mp3" type="AudioStream" id=2]
+[ext_resource path="res://SourceAudios/掌声 applause  音乐音效 Music Sound Effects.mp3" type="AudioStream" id=3]
+[ext_resource path="res://SourceAudios/成功音效Success sound 音樂音效 Music Sound Effects.mp3" type="AudioStream" id=4]
+[ext_resource path="res://SourceAudios/游戏结束蜂鸣声Game over beep 音樂音效 Music Sound Effects.mp3" type="AudioStream" id=5]
+[ext_resource path="res://SourceAudios/游戏结束game over 音乐音效 Music Sound Effects.mp3" type="AudioStream" id=6]
+[ext_resource path="res://SourceAudios/錯誤提示音Error tone 音樂音效 Music Sound Effects.mp3" type="AudioStream" id=7]
+[ext_resource path="res://SourceAudios/胜利通关音效Victory clearance sound 音樂音效 Music Sound Effects.mp3" type="AudioStream" id=8]
+
+[node name="Control" type="Control"]
+margin_right = 1025.0
+margin_bottom = 595.0
+script = ExtResource( 1 )
+
+[node name="PrettyFilmScore" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
+volume_db = -26.219
+
+[node name="CorrectOptionSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+volume_db = -12.266
+
+[node name="Applause" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+volume_db = -5.244
+
+[node name="Gamover" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+
+[node name="Gameover2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+
+[node name="Victory" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
+
+[node name="ErrorSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+volume_db = -7.875

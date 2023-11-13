@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/胜利通关音效Victory clearance sound 音樂音效 Music Sound Effects.mp3-a71ee8733b4aa29b540f854399b7e2d4.mp3str"
+
+[deps]
+
+source_file="res://SourceAudios/胜利通关音效Victory clearance sound 音樂音效 Music Sound Effects.mp3"
+dest_files=[ "res://.import/胜利通关音效Victory clearance sound 音樂音效 Music Sound Effects.mp3-a71ee8733b4aa29b540f854399b7e2d4.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

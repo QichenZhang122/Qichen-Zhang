@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/游戏结束game over 音乐音效 Music Sound Effects.mp3-4b6ce73e2268569465bf642f43c8e64a.mp3str"
+
+[deps]
+
+source_file="res://SourceAudios/游戏结束game over 音乐音效 Music Sound Effects.mp3"
+dest_files=[ "res://.import/游戏结束game over 音乐音效 Music Sound Effects.mp3-4b6ce73e2268569465bf642f43c8e64a.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
